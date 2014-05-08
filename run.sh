@@ -1,5 +1,5 @@
 #!/bin/sh
 
-# This will run Rexster container interactively and delete container when existing (Rexster process ends)
+# This will run a new Rexster container detached
 
-docker run --name=rexster --rm=true -t -i konrader/rexster
+docker run --name=rexster -d konrader/rexster
